@@ -21,6 +21,7 @@
 		9E6DB15623608DB90068C6AB /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DB15523608DB90068C6AB /* ItemDetail.swift */; };
 		9E6DB1582360951D0068C6AB /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DB1572360951D0068C6AB /* OrderView.swift */; };
 		9E6DB15A23609BBE0068C6AB /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DB15923609BBE0068C6AB /* AppView.swift */; };
+		9E6DB15C23609DBA0068C6AB /* CheckOutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6DB15B23609DBA0068C6AB /* CheckOutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		9E6DB15523608DB90068C6AB /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		9E6DB1572360951D0068C6AB /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		9E6DB15923609BBE0068C6AB /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		9E6DB15B23609DBA0068C6AB /* CheckOutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				9E6DB15523608DB90068C6AB /* ItemDetail.swift */,
 				9E6DB1572360951D0068C6AB /* OrderView.swift */,
 				9E6DB15923609BBE0068C6AB /* AppView.swift */,
+				9E6DB15B23609DBA0068C6AB /* CheckOutView.swift */,
 				9E69894A235F136C00FB10D2 /* Assets.xcassets */,
 				9E69894F235F136C00FB10D2 /* LaunchScreen.storyboard */,
 				9E698952235F136C00FB10D2 /* Info.plist */,
@@ -180,6 +183,7 @@
 				9E6DB1582360951D0068C6AB /* OrderView.swift in Sources */,
 				9E698949235F136B00FB10D2 /* ContentView.swift in Sources */,
 				9E6DB15A23609BBE0068C6AB /* AppView.swift in Sources */,
+				9E6DB15C23609DBA0068C6AB /* CheckOutView.swift in Sources */,
 				9E698959235F157C00FB10D2 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
