@@ -20,7 +20,13 @@ struct CheckOutView: View {
     @State private var paymentType = 0
     @State private var addLoyaltyDetails = false
     @State private var loyaltyNumber = ""
-    @State private var tipAmmount = 15
+    @State private var tipAmmount = 1
+
+    var totalPrice: Double {
+        let total = Double(order.total)
+        let tipValue = total / 100 * Double(Self.tipAmounts[tipAmmount])
+        return total + tipValue
+    }
 
     var body: some View {
         Form { //With a VStack here i would have a picker
@@ -50,7 +56,7 @@ struct CheckOutView: View {
             }
 
             Section(header:
-                Text("Total: $100")
+                Text("Total: $\(totalPrice, specifier: "%.2f")")
             ) {
                 Button("Confirm Order") {
                     // place the order
