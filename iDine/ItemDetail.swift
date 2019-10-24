@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ItemDetail: View {
     @EnvironmentObject var order: Order
-    @EnvironmentObject var favorites: Order
+    @EnvironmentObject var favorites: Favorites
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var item: MenuItem
 

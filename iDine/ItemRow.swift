@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ItemRow: View {
-    @EnvironmentObject var favorites: Order
+    @EnvironmentObject var favorites: Favorites
     static let colors: [String: Color] = ["D": .purple,
         "G": .black,
         "N": .red,
@@ -56,7 +56,7 @@ struct ItemRow: View {
 }
 
 struct ItemRow_Previews: PreviewProvider {
-    static let favorites = Order()
+    static let favorites = Favorites()
     static var previews: some View {
         ItemRow(item: MenuItem.example).environmentObject(favorites)
     }
