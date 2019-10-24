@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ItemDetail: View {
     @EnvironmentObject var order: Order
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var item: MenuItem
 
     var body: some View {
@@ -28,6 +29,7 @@ struct ItemDetail: View {
 
             Button("Order This") {
                 self.order.add(item: self.item)
+                self.presentationMode.wrappedValue.dismiss()
             }
                 .font(.headline)
                 .padding(10)
