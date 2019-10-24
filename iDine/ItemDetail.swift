@@ -10,19 +10,45 @@ import SwiftUI
 
 struct ItemDetail: View {
     @EnvironmentObject var order: Order
+    @EnvironmentObject var favorites: Order
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var item: MenuItem
 
     var body: some View {
         VStack {
-            ZStack(alignment: .bottomTrailing) {
-                Image(item.mainImage)
-                Text("Photo: \(item.photoCredit)")
-                    .padding(4)
-                    .background(Color.black)
-                    .font(.caption)
-                    .foregroundColor(.white)
-                    .offset(x: -5, y: -5)
+            ZStack(alignment: .topTrailing) {
+                ZStack(alignment: .bottomTrailing) {
+                    Image(item.mainImage)
+                    Text("Photo: \(item.photoCredit)")
+                        .padding(4)
+                        .background(Color.black)
+                        .font(.caption)
+                        .foregroundColor(.white)
+                        .offset(x: -5, y: -5)
+                }
+                Button(action: {
+                    if self.favorites.contains(item: self.item) {
+                        self.favorites.remove(item: self.item)
+                    } else {
+                        self.favorites.add(item: self.item)
+                    }
+                }) {
+                    if self.favorites.items.contains(self.item) {
+                        Image(systemName: "star.fill")
+                            .imageScale(.large)
+                            .padding(10)
+                            .foregroundColor(.yellow)
+                            .overlay(Circle().stroke(Color.yellow, lineWidth: 2))
+                            .padding(5)
+                    } else {
+                        Image(systemName: "star")
+                            .imageScale(.large)
+                            .padding(10)
+                            .foregroundColor(.gray)
+                            .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                            .padding(5)
+                    }
+                }
             }
 
             Text(item.description).padding()
