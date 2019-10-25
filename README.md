@@ -9,9 +9,6 @@ Paul Hudson's youtube channel:
 https://www.youtube.com/channel/UCmJi5RdDLgzvkl3Ly0DRMlQ
 
 
-<img src="https://github.com/ReinaldoV/iDine/blob/master/images/Menu.png" width="200">
-<img src="https://github.com/ReinaldoV/iDine/blob/master/images/Detail.png" width="200">
-<img src="https://github.com/ReinaldoV/iDine/blob/master/images/Favorites.png" width="200">
-<img src="https://github.com/ReinaldoV/iDine/blob/master/images/Order.png" width="200">
-<img src="https://github.com/ReinaldoV/iDine/blob/master/images/Payment.png" width="200">
-<img src="https://github.com/ReinaldoV/iDine/blob/master/images/Alert%20Payment.png" width="200">
+<img src="https://github.com/ReinaldoV/iDine/blob/master/images/Menu.png" width="300"> <img src="https://github.com/ReinaldoV/iDine/blob/master/images/Detail.png" width="300">
+<img src="https://github.com/ReinaldoV/iDine/blob/master/images/Favorites.png" width="300"> <img src="https://github.com/ReinaldoV/iDine/blob/master/images/Order.png" width="300">
+<img src="https://github.com/ReinaldoV/iDine/blob/master/images/Payment.png" width="300"> <img src="https://github.com/ReinaldoV/iDine/blob/master/images/Alert%20Payment.png" width="300">
